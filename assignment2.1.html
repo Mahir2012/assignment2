@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-style:italic;
+        }
+        
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #003366;
+            }
+
+        @media (max-width: 600px) {
+            header, footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TIM HORTONS</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2><u>About</u></h2>
+            <p>
+                In 1964, the first Tim Hortons® restaurant in Hamilton, Ontario opened its doors and Canadians have been ordering Tim Hortons iconic Original Blend coffee, Double-Double ™ coffees, Donuts and Timbits® ever since. Over the years, Tim Hortons has captured the hearts and taste buds of Canadians. Tim Hortons is now proud to be Canada's largest restaurant chain serving over 5 million cups of coffee every day with 80% of Canadians visiting a Tims in Canada at least once a month. More than a coffee and bake shop, Tim Hortons is part of the fabric of Canada and a proud symbol of our country and its values.
+
+                We have always had a deep connection to our communities and our guests from coast to coast. Our more than 1,500 restaurant owners are Canadians who live in communities across the country employing over 100,000 people. Our local Owners and their teams care deeply about the communities they serve. That’s why we provide over $60 million per year to organizations and communities throughout Canada. From signature programs like Timbits® Sports and the Tim Hortons Foundation Camps, we invest in community projects and initiatives big and small.
+            </p>
+        </section>
+        <section>
+            <h2><u>Services</u></h2>
+            <p>
+                <b><u>Food and Beverage:</u></b>
+            </p>
+
+            <p> <b> Coffee:</b></p>
+            Tim Hortons is known for its signature Original Blend coffee, as well as specialty lattes, cappuccinos, espresso, iced coffee, and hot chocolate.<p><img src="C:\Users\vahor\OneDrive\Desktop\mahir\coffee.jpg" width="300" height="200" style="vertical-align:middle"></p>
+            <p> <b> Baked Goods:</b></p>
+            Tim Hortons offers a variety of baked goods, including pastries, muffins, bagels, and more. These are freshly baked items that can be enjoyed for a quick snack or a treat.<p><img src="C:\Users\vahor\Downloads\pumpkin-spice-dream-donut.jpeg" width="300" height="200" style="vertical-align:middle"></p>
+            <p> <b>Sandwiches and Wraps:</b></p>
+            Tim Hortons offers a variety of sandwiches and wraps, including grilled cheese melts, panini, and wraps with fillings like BBQ pulled pork, steak and cheese, and chicken bacon ranch.<p><img src="C:\Users\vahor\OneDrive\Desktop\mahir\sandwiches and wraps.jpg" width="300" height="200" style="vertical-align:middle"></p>
+            <p> <b> Soups:</b></p>
+            Tim Hortons may also offer soups like chicken noodle, cream of broccoli,chili and many more.<p><img src="C:\Users\vahor\OneDrive\Desktop\mahir\soups.jpeg" width="300" height="200" style="vertical-align:middle"></p>
+            <p> <b> <u>Other Services:</u></b></p>
+            <p>  <b> Drive-Thru:</b></p> Many Tim Hortons locations offer drive-thru service.
+            <p>  <b>Catering:</b></p> They offer catering services for events and gatherings, with options for pickup.
+            <p> <b>Rewards Program:</b></p> Tim Hortons has a rewards program that allows members to earn points, redeem rewards, and enjoy special offers.
+            <p>   <b> Self-Serve Kiosks:</b></p> Some locations have self-serve kiosks for ordering and payment.
+
+        </section>
+        <section>
+            <h2><u>Portfolio</u></h2>
+            <p>
+               <b> People and Communities:</b></p>
+                Tim Hortons is committed to giving back to local communities and supporting initiatives that benefit people.<p><img src="C:\Users\vahor\OneDrive\Desktop\mahir\people and communities.jpeg" width="300" height="200" style="vertical-align:middle"></p>
+               <p><b> Planet:</b></p>
+                This includes efforts to reduce their environmental impact, such as minimizing waste and promoting sustainability in their operations.
+                <p><b>Food and Beverage Quality:</b></p>
+                Tim Hortons is focused on maintaining high standards for the quality of their coffee, baked goods, and other food and beverages.
+            
+        </section>
+    </div>
+
+    <div class="container">
+        <section>
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p cont>TM® @TIM HORTONS,2025</p>
+    </footer>
+
+    <script>
+    $(document).ready(function() {
+      $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        const name = $('#name').val().trim();
+        const email = $('#email').val().trim();
+        const message = $('#message').val().trim();
+
+        if (name === '' || email === '' || message === '') {
+          alert('Please fill in all fields.');
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          alert('Please enter a valid email address.');
+        } else {
+          alert('Thank you for your message, ' + name + '!');
+          $(this)[0].reset();
+        }
+      });
+    });
+    </script>
+</body>
+</html>
